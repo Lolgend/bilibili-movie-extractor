@@ -1,8 +1,7 @@
 from pathlib import Path
 import os, re, shutil, subprocess, json
 
-dev_mode = True
-working_dir = Path(input('Enter target directory: ')) if not dev_mode else r'C:\Users\lumzh\Desktop\download'
+working_dir = Path(input('Enter target directory: '))
 file_regex = re.compile(r'(\d+)\.blv$')
 
 def file_number(file):
